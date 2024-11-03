@@ -19,24 +19,26 @@ void Player::move()
 	if (direction.getposX()==0 && direction.getposY()==0 ) {
 	}
 	else {
-		for (int i = BodyList.size()-1 ; i !=0; i--) {
+		for (int i = BodyList.size() - 1; i  > -1; i--) { //i = BodyList.size() - 1 Pour le décaler sur BodyList[0-X] au lieu de BodyList[1-X] quand je fait BodyList[i]
 			if (BodySnake* BodyTemp = dynamic_cast<BodySnake*> (BodyList[i])) {
-				if(i!=1){
+				if(i!=0){
 
-					BodySnake* BodyTemp2 = dynamic_cast<BodySnake*> (BodyList[i - 1]);
+					BodySnake* BodyTemp2 = dynamic_cast<BodySnake*> (BodyList[i - 1]);// BodyList[i-1] pour récuperer le membre de corps qui suit l'avant
 
 					BodyTemp->setpos(BodyTemp2->getpos());
+					BodyTemp->visualsprite(BodyTemp->getpos().getposX() + direction.getposX(), BodyTemp->getpos().getposY() + direction.getposY());
 
 					std::cout << BodyTemp->getpos().getposX() << "," << BodyTemp->getpos().getposY() << std::endl;
 				}
-				else {
+				else { //Enfin la tête : 
 
+					std::cout << direction.getposX() << "," << direction.getposY() << std::endl; // Get direction
 
-					std::cout << direction.getposX() << "," << direction.getposY() << std::endl;
 					BodyTemp->setpos(Vector2(BodyTemp->getpos().getposX() + direction.getposX(), BodyTemp->getpos().getposY() + direction.getposY()));
 					BodyTemp->visualsprite(BodyTemp->getpos().getposX() + direction.getposX(), BodyTemp->getpos().getposY() + direction.getposY());
-					std::cout << "WORKING WORKING" << std::endl;
+
 					std::cout << BodyTemp->getpos().getposX() << "," << BodyTemp->getpos().getposY() << std::endl;
+					std::cout << "Movement Process Done" << std::endl;
 				}
 			}
 			else {

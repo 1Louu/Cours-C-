@@ -1,18 +1,2 @@
 ﻿  CoursSFML.cpp
-  Entity.h
-  World.cpp
-  Génération de code en cours...
-x64\Debug\Entity.obj : warning LNK4042: objet spécifié plus d'une fois ; définitions supplémentaires ignorées
-BodySnake.obj : error LNK2019: symbole externe non résolu "public: __cdecl Entity::Entity(float,float)" (??0Entity@@QEAA@MM@Z) référencé dans la fonction "public: __cdecl BodySnake::BodySnake(float,float)" (??0BodySnake@@QEAA@MM@Z)
-Food.obj : error LNK2001: symbole externe non résolu "public: __cdecl Entity::Entity(float,float)" (??0Entity@@QEAA@MM@Z)
-Player.obj : error LNK2001: symbole externe non résolu "public: __cdecl Entity::Entity(float,float)" (??0Entity@@QEAA@MM@Z)
-BodySnake.obj : error LNK2001: symbole externe non résolu "public: virtual void __cdecl Entity::setpos(class Vector2)" (?setpos@Entity@@UEAAXVVector2@@@Z)
-Food.obj : error LNK2001: symbole externe non résolu "public: virtual void __cdecl Entity::setpos(class Vector2)" (?setpos@Entity@@UEAAXVVector2@@@Z)
-Player.obj : error LNK2001: symbole externe non résolu "public: virtual void __cdecl Entity::setpos(class Vector2)" (?setpos@Entity@@UEAAXVVector2@@@Z)
-BodySnake.obj : error LNK2001: symbole externe non résolu "public: virtual class Vector2 __cdecl Entity::getpos(void)" (?getpos@Entity@@UEAA?AVVector2@@XZ)
-Food.obj : error LNK2001: symbole externe non résolu "public: virtual class Vector2 __cdecl Entity::getpos(void)" (?getpos@Entity@@UEAA?AVVector2@@XZ)
-Player.obj : error LNK2001: symbole externe non résolu "public: virtual class Vector2 __cdecl Entity::getpos(void)" (?getpos@Entity@@UEAA?AVVector2@@XZ)
-BodySnake.obj : error LNK2001: symbole externe non résolu "public: virtual class sf::Shape * __cdecl Entity::getVisual(void)" (?getVisual@Entity@@UEAAPEAVShape@sf@@XZ)
-Food.obj : error LNK2001: symbole externe non résolu "public: virtual class sf::Shape * __cdecl Entity::getVisual(void)" (?getVisual@Entity@@UEAAPEAVShape@sf@@XZ)
-Player.obj : error LNK2001: symbole externe non résolu "public: virtual class sf::Shape * __cdecl Entity::getVisual(void)" (?getVisual@Entity@@UEAAPEAVShape@sf@@XZ)
-C:\Users\luccb\Desktop\About Me\Ynov\C++\CoursSFML\x64\Debug\CoursSFML.exe : fatal error LNK1120: 4 externes non résolus
+  CoursSFML.vcxproj -> C:\Users\luccb\Desktop\About Me\Ynov\C++\CoursSFML\x64\Debug\CoursSFML.exe

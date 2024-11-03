@@ -37,6 +37,7 @@ int main()
             World1.process();
             elapsed = clock.restart();
         }
+
         window.clear();
         World1.draw(window);
         window.display();
