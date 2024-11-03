@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 #include "Player.h"
 
 Player::Player(float _x, float _y, Vector2 _direction)
@@ -15,11 +16,33 @@ Player::Player(float _x, float _y, Vector2 _direction)
 
 void Player::move()
 {
-	if (direction.getposX() && direction.getposY()) {
-		std::cout << "error" << std::endl; 
+	if (direction.getposX()==0 && direction.getposY()==0 ) {
 	}
 	else {
+		for (int i = BodyList.size()-1 ; i !=0; i--) {
+			if (BodySnake* BodyTemp = dynamic_cast<BodySnake*> (BodyList[i])) {
+				if(i!=1){
 
+					BodySnake* BodyTemp2 = dynamic_cast<BodySnake*> (BodyList[i - 1]);
+
+					BodyTemp->setpos(BodyTemp2->getpos());
+
+					std::cout << BodyTemp->getpos().getposX() << "," << BodyTemp->getpos().getposY() << std::endl;
+				}
+				else {
+
+
+					std::cout << direction.getposX() << "," << direction.getposY() << std::endl;
+					BodyTemp->setpos(Vector2(BodyTemp->getpos().getposX() + direction.getposX(), BodyTemp->getpos().getposY() + direction.getposY()));
+					BodyTemp->visualsprite(BodyTemp->getpos().getposX() + direction.getposX(), BodyTemp->getpos().getposY() + direction.getposY());
+					std::cout << "WORKING WORKING" << std::endl;
+					std::cout << BodyTemp->getpos().getposX() << "," << BodyTemp->getpos().getposY() << std::endl;
+				}
+			}
+			else {
+				std::cout << "Error" << std::endl; 
+			}
+		}
 	}
 }
 

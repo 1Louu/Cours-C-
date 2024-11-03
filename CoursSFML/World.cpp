@@ -34,16 +34,19 @@ void World::movement(sf::Keyboard::Scancode _event)
 	switch (_event) {
 	case sf::Keyboard::Scan::Left:
 		std::cout << "left" << std::endl;
-		bob->setDirection(Vector2(1, 0)); 
+		bob->setDirection(Vector2(-1, 0)); 
 		break;
 	case sf::Keyboard::Scan::Right:
 		std::cout << "right" << std::endl;
+		bob->setDirection(Vector2(1, 0));
 		break;
 	case sf::Keyboard::Scan::Up:
 		std::cout << "up" << std::endl;
+		bob->setDirection(Vector2(0, -1));
 		break;
 	case sf::Keyboard::Scan::Down:
 		std::cout << "down" << std::endl;
+		bob->setDirection(Vector2(0, 1));
 		break;
 	}
 }
@@ -52,4 +55,14 @@ void World::FoodConsumed()
 {
 	score++;
 
+}
+
+void World::nomovement()
+{
+	
+}
+
+void World::process()
+{
+	bob->move(); 
 }

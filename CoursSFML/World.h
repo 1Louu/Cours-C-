@@ -17,6 +17,8 @@ public:
 	void draw(sf::RenderWindow&); 
 	void movement(sf::Keyboard::Scancode _event);
 	void FoodConsumed();
+	void nomovement();
+	void process();
 };
 
 #endif

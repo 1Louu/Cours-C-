@@ -7,7 +7,7 @@
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(32*32, 32*16), "SFML works!");
+    sf::RenderWindow window(sf::VideoMode(32*16, 32*16), "SFML works!");
 
     sf::Font font;
     if (!font.loadFromFile("font/Arimo-VariableFont_wght.ttf"))
@@ -15,9 +15,13 @@ int main()
         // erreur...
     }
     World World1; 
+    sf::Clock clock;
+
+    
 
     while (window.isOpen())
     {
+        sf::Time elapsed = clock.getElapsedTime();
         sf::Event event;
         while (window.pollEvent(event))
         {
@@ -25,6 +29,13 @@ int main()
                 window.close();
             if (event.type == sf::Event::KeyPressed)
                 World1.movement(event.key.scancode);
+            else
+                World1.nomovement(); 
+        }
+
+        if (elapsed > sf::seconds(0.5f)) {
+            World1.process();
+            elapsed = clock.restart();
         }
         window.clear();
         World1.draw(window);

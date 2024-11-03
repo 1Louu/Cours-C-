@@ -1,1 +1,2 @@
 C:\Users\luccb\source\repos\CoursSFML\CoursSFML\x64\Debug\CoursSFML.vcxproj.Up2Date
+C:\Users\luccb\Desktop\About Me\Ynov\C++\CoursSFML\CoursSFML\x64\Debug\CoursSFML.vcxproj.Up2Date

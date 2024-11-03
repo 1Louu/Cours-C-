@@ -1,6 +1,7 @@
 #ifndef IEAT_H__
 #define IEAT_H__
-#include "Food.h"
+
+class Food; 
 
 class IEat {
 public:

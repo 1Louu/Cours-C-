@@ -1,53 +1,18 @@
-﻿  BodySnake.cpp
-  CoursSFML.cpp
-C:\Users\luccb\Desktop\About Me\Ynov\C++\CoursSFML\CoursSFML\Food.h(10,7): error C2143: erreur de syntaxe : absence de ';' avant '*'
-  (compiler le fichier source 'CoursSFML.cpp')
-  
-C:\Users\luccb\Desktop\About Me\Ynov\C++\CoursSFML\CoursSFML\Food.h(10,2): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
-  (compiler le fichier source 'CoursSFML.cpp')
-  
-C:\Users\luccb\Desktop\About Me\Ynov\C++\CoursSFML\CoursSFML\Food.h(10,15): error C2238: jetons inattendus avant ';'
-  (compiler le fichier source 'CoursSFML.cpp')
-  
-C:\Users\luccb\Desktop\About Me\Ynov\C++\CoursSFML\CoursSFML\Food.h(12,27): error C2061: erreur de syntaxe : identificateur 'World'
-  (compiler le fichier source 'CoursSFML.cpp')
-  
-  Entity.cpp
+﻿  CoursSFML.cpp
   Entity.h
-  Food.cpp
-C:\Users\luccb\Desktop\About Me\Ynov\C++\CoursSFML\CoursSFML\IEat.h(7,19): error C2061: erreur de syntaxe : identificateur 'Food'
-  (compiler le fichier source 'Food.cpp')
-  
-C:\Users\luccb\Desktop\About Me\Ynov\C++\CoursSFML\CoursSFML\Player.h(15,19): error C2061: erreur de syntaxe : identificateur 'Food'
-  (compiler le fichier source 'Food.cpp')
-  
-  Player.cpp
-C:\Users\luccb\Desktop\About Me\Ynov\C++\CoursSFML\CoursSFML\World.h(13,8): error C2143: erreur de syntaxe : absence de ';' avant '*'
-  (compiler le fichier source 'Player.cpp')
-  
-C:\Users\luccb\Desktop\About Me\Ynov\C++\CoursSFML\CoursSFML\World.h(13,2): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
-  (compiler le fichier source 'Player.cpp')
-  
-C:\Users\luccb\Desktop\About Me\Ynov\C++\CoursSFML\CoursSFML\World.h(13,13): error C2238: jetons inattendus avant ';'
-  (compiler le fichier source 'Player.cpp')
-  
-  Vector2.cpp
-C:\Users\luccb\Desktop\About Me\Ynov\C++\CoursSFML\CoursSFML\Vector2.cpp(29,10): warning C4244: 'initialisation' : conversion de 'double' en 'float', perte possible de données
   World.cpp
-C:\Users\luccb\Desktop\About Me\Ynov\C++\CoursSFML\CoursSFML\Food.h(10,7): error C2143: erreur de syntaxe : absence de ';' avant '*'
-  (compiler le fichier source 'World.cpp')
-  
-C:\Users\luccb\Desktop\About Me\Ynov\C++\CoursSFML\CoursSFML\Food.h(10,2): error C4430: spécificateur de type manquant - int est pris en compte par défaut. Remarque : C++ ne prend pas en charge int par défaut
-  (compiler le fichier source 'World.cpp')
-  
-C:\Users\luccb\Desktop\About Me\Ynov\C++\CoursSFML\CoursSFML\Food.h(10,15): error C2238: jetons inattendus avant ';'
-  (compiler le fichier source 'World.cpp')
-  
-C:\Users\luccb\Desktop\About Me\Ynov\C++\CoursSFML\CoursSFML\Food.h(12,27): error C2061: erreur de syntaxe : identificateur 'World'
-  (compiler le fichier source 'World.cpp')
-  
-C:\Users\luccb\Desktop\About Me\Ynov\C++\CoursSFML\CoursSFML\World.cpp(8,18): error C2661: 'Food::Food' : aucune fonction surchargée ne nécessite 3 arguments
-      C:\Users\luccb\Desktop\About Me\Ynov\C++\CoursSFML\CoursSFML\World.cpp(8,18):
-      lors de la tentative de mise en correspondance de la liste des arguments '(float, float, World *)'
-  
   Génération de code en cours...
+x64\Debug\Entity.obj : warning LNK4042: objet spécifié plus d'une fois ; définitions supplémentaires ignorées
+BodySnake.obj : error LNK2019: symbole externe non résolu "public: __cdecl Entity::Entity(float,float)" (??0Entity@@QEAA@MM@Z) référencé dans la fonction "public: __cdecl BodySnake::BodySnake(float,float)" (??0BodySnake@@QEAA@MM@Z)
+Food.obj : error LNK2001: symbole externe non résolu "public: __cdecl Entity::Entity(float,float)" (??0Entity@@QEAA@MM@Z)
+Player.obj : error LNK2001: symbole externe non résolu "public: __cdecl Entity::Entity(float,float)" (??0Entity@@QEAA@MM@Z)
+BodySnake.obj : error LNK2001: symbole externe non résolu "public: virtual void __cdecl Entity::setpos(class Vector2)" (?setpos@Entity@@UEAAXVVector2@@@Z)
+Food.obj : error LNK2001: symbole externe non résolu "public: virtual void __cdecl Entity::setpos(class Vector2)" (?setpos@Entity@@UEAAXVVector2@@@Z)
+Player.obj : error LNK2001: symbole externe non résolu "public: virtual void __cdecl Entity::setpos(class Vector2)" (?setpos@Entity@@UEAAXVVector2@@@Z)
+BodySnake.obj : error LNK2001: symbole externe non résolu "public: virtual class Vector2 __cdecl Entity::getpos(void)" (?getpos@Entity@@UEAA?AVVector2@@XZ)
+Food.obj : error LNK2001: symbole externe non résolu "public: virtual class Vector2 __cdecl Entity::getpos(void)" (?getpos@Entity@@UEAA?AVVector2@@XZ)
+Player.obj : error LNK2001: symbole externe non résolu "public: virtual class Vector2 __cdecl Entity::getpos(void)" (?getpos@Entity@@UEAA?AVVector2@@XZ)
+BodySnake.obj : error LNK2001: symbole externe non résolu "public: virtual class sf::Shape * __cdecl Entity::getVisual(void)" (?getVisual@Entity@@UEAAPEAVShape@sf@@XZ)
+Food.obj : error LNK2001: symbole externe non résolu "public: virtual class sf::Shape * __cdecl Entity::getVisual(void)" (?getVisual@Entity@@UEAAPEAVShape@sf@@XZ)
+Player.obj : error LNK2001: symbole externe non résolu "public: virtual class sf::Shape * __cdecl Entity::getVisual(void)" (?getVisual@Entity@@UEAAPEAVShape@sf@@XZ)
+C:\Users\luccb\Desktop\About Me\Ynov\C++\CoursSFML\x64\Debug\CoursSFML.exe : fatal error LNK1120: 4 externes non résolus
